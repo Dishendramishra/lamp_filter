@@ -62,7 +62,7 @@ class Ui(QMainWindow):
         super(Ui, self).__init__(*args, **kwargs)
 
         uic.loadUi('main.ui', self)
-        self.setWindowTitle("LAMP Filter")
+        self.setWindowTitle("ND Filter")
 
         # self.threadpool = QThreadPool()
         # print("Multithreading with maximum %d threads" % self.threadpool.maxThreadCount())
@@ -72,7 +72,7 @@ class Ui(QMainWindow):
         self.show()
 
     def ui_settings(self):
-        self.spnbx_angle.setValue(49)
+        self.spnbx_angle.setValue(46)
         self.btn_move.clicked.connect(self.move)
         self.btn_home.clicked.connect(self.home)
 
