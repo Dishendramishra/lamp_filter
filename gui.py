@@ -80,7 +80,7 @@ class Ui(QMainWindow):
         ports = serial.tools.list_ports.comports()
         target_port = None
         for port, desc, hwid in sorted(ports):
-            # print("{}: {} [{}]".format(port, desc, hwid))
+            print("{}: {} [{}]".format(port, desc, hwid))
             if "PID=2341:0043" in hwid:
                 # print(port)
                 target_port = port
